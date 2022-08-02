@@ -13,7 +13,7 @@
 
 <meta name="date" content="2022-08-02" />
 
-<title>EDS212 Day 2 Part 1- Drivatives and git intro</title>
+<title>Penguins</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -363,69 +363,14 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">EDS212 Day 2 Part 1- Drivatives and git
-intro</h1>
+<h1 class="title toc-ignore">Penguins</h1>
 <h4 class="author">Kristine Duarte</h4>
 <h4 class="date">2022-08-02</h4>
 
 </div>
 
 
-<div id="derivatives-in-r" class="section level2">
-<h2>Derivatives in R</h2>
-<p>Find the Derivitive of <span class="math inline">\(f(x) =
-5x^2\)</span></p>
-<p>this stuff above is in Latex (different language)</p>
-<pre class="r"><code>ex_1 &lt;- expression (5 * x ^ 2)
 
-my_derivative &lt;- deriv(ex_1, &quot;x&quot;)
-my_derivative</code></pre>
-<pre><code>## expression({
-##     .value &lt;- 5 * x^2
-##     .grad &lt;- array(0, c(length(.value), 1L), list(NULL, c(&quot;x&quot;)))
-##     .grad[, &quot;x&quot;] &lt;- 5 * (2 * x)
-##     attr(.value, &quot;gradient&quot;) &lt;- .grad
-##     .value
-## })</code></pre>
-<pre class="r"><code># I want to find the slope at x = 2.8
-
-x &lt;- 2.8
-eval(my_derivative)</code></pre>
-<pre><code>## [1] 39.2
-## attr(,&quot;gradient&quot;)
-##       x
-## [1,] 28</code></pre>
-<pre class="r"><code># a Word followed by a parentheses is a function</code></pre>
-<p>Find the slope of <span class="math inline">\(f(x) =
-2z^3-10.5z^2+4.1\)</span></p>
-<pre class="r"><code>gz &lt;- expression(2 * z ^ 3 - 10.5 * z ^ 2 + 4.1)
-
-dg_dz &lt;- D(gz, &quot;z&quot;)
-dg_dz</code></pre>
-<pre><code>## 2 * (3 * z^2) - 10.5 * (2 * z)</code></pre>
-<pre class="r"><code>#Let&#39;s evaluate the slope over a range of values
-
-z&lt;- seq(from = -3, to = 4, by = 0.5)
-
-#Evaluate it!
-eval(dg_dz)</code></pre>
-<pre><code>##  [1] 117  90  66  45  27  12   0  -9 -15 -18 -18 -15  -9   0  12</code></pre>
-<p>Some awesome text! this is my first file that is going to github
-Saving on computer- there is baby level of security- to make sure there
-is a history of changes made, send changes to the local gitrepo</p>
-<p>Need to create the git repo every time for projects you want to save
-version control Click stage box- to send to local git repo (still on
-local computer- then hit commit) Only shows up when it has been modified
-and not committed yet.<br />
-Need to send the committed chnages (only locally) need to #PUSH them
-(green up arrow)</p>
-<p>To change default branch (from master b/c of racist connotation)
-usethis::git_default_branch_rename() automatically assumes you want to
-change branch name from master to main</p>
-<p>Branches to work in- not making changes directly to the core of where
-things are safely stored until you are ready to push them to the main
-group</p>
-</div>
 
 
 
