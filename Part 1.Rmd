@@ -1,0 +1,47 @@
+---
+title: "EDS212 Day 2 Part 1- Drivatives and git intro"
+author: "Kristine Duarte"
+date: "2022-08-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Derivatives in R
+
+Find the Derivitive of $f(x) = 5x^2$
+
+this stuff above is in Latex (different language)
+
+```{r}
+ex_1 <- expression (5 * x ^ 2)
+
+my_derivative <- deriv(ex_1, "x")
+my_derivative
+
+# I want to find the slope at x = 2.8
+
+x <- 2.8
+eval(my_derivative)
+
+# a Word followed by a parentheses is a function
+```
+Find the slope of $f(x) = 2z^3-10.5z^2+4.1$
+
+```{r}
+gz <- expression(2 * z ^ 3 - 10.5 * z ^ 2 + 4.1)
+
+dg_dz <- D(gz, "z")
+dg_dz
+
+#Let's evaluate the slope over a range of values
+
+z<- seq(from = -3, to = 4, by = 0.5)
+
+#Evaluate it!
+eval(dg_dz)
+
+```
+
