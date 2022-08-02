@@ -47,3 +47,11 @@ eval(dg_dz)
 ```
 
 Some awesome text! this is my first file that is going to github
+Saving on computer- there is baby level of security- to make sure there is a history of changes made, send changes to the local gitrepo 
+
+Need to create the git repo every time for projects you want to save version control
+Click stage box- to send to local git repo (still on local computer- then hit commit)
+Only shows up when it has been modified and not committed yet.  
+Need to send the committed chnages (only locally) need to #PUSH them (green up arrow)
+
+
