@@ -28,6 +28,7 @@ eval(my_derivative)
 
 # a Word followed by a parentheses is a function
 ```
+
 Find the slope of $f(x) = 2z^3-10.5z^2+4.1$
 
 ```{r}
@@ -44,4 +45,3 @@ z<- seq(from = -3, to = 4, by = 0.5)
 eval(dg_dz)
 
 ```
-
