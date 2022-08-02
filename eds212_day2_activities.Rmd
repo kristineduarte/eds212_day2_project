@@ -8,5 +8,34 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
-library(palmerpenguins)```
+library(palmerpenguins)
+
+```
+```{r}
+ex_A <- expression(x ^ 2)
+
+my_derivative <- deriv(ex_A, "x")
+
+x <- 3
+
+eval(my_derivative)
+
+ex_B <- expression((2 * ((3 * a) + 2) ^ 4) - 5)
+
+my_derivativeb <- deriv(ex_B, "a")
+
+a <- 1.2
+
+eval(my_derivativeb)
+
+ex_C <- expression((-4 * t)/((t^2) + 1)^3)
+
+my_derivativec <- deriv(ex_C, "t")
+
+t <- 0
+
+eval(my_derivativec)
+
+
+```
 
