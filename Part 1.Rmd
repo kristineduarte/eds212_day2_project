@@ -54,3 +54,4 @@ Need to send the committed chnages (only locally) need to #PUSH them (green up a
 To change default branch (from master b/c of racist connotation) usethis::git_default_branch_rename() automatically assumes you want to change branch name from master to main
 
 Branches to work in- not making changes directly to the core of where things are safely stored until you are ready to push them to the main group
+
