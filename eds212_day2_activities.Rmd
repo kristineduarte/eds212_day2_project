@@ -39,3 +39,15 @@ eval(my_derivativec)
 
 ```
 
+```{r}
+p<- penguins
+ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm)) + geom_point(aes(color = species))
+```
+
+```{r}
+
+ggplot(data = penguins, aes(bill_length_mm, y = bill_depth_mm)) + 
+  geom_jitter(aes(color = species)) + 
+labs (x = "Bill Length (mm)", y = "Bill Depth (mm)", title = "Palmer Penguins Bill Length vs. Depth")
+```
+
